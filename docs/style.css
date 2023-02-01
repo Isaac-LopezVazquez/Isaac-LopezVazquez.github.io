@@ -1,0 +1,271 @@
+
+body {
+    font-family:"Roboto", sans-serf;
+  }
+  
+  
+  /* Navbar */
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: rgb(58, 82, 134);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    color:  white;
+  }
+  
+  
+  nav a:hover {
+    
+    border-bottom: 2px solid  #ff7235; /*  */
+  }
+  
+  nav ul { 
+    display: flex;  /* adaptable al espacio*/
+    gap: 1.9rem; /* espacio entre rows y columns*/
+  }
+  
+  
+  
+  /* Estilos generales */
+  
+  section {  /* para todos los section */
+    display: flex; /* flexibles */
+    flex-direction: column; /* direccion vertical */
+    align-items: center; /* alinear en el centro */
+    justify-content: center;
+  }
+  
+  h1 { /* Titulos */
+    font-size: 2.5rem; /* relativa al elemento raiz */
+    font-family: 'Rubik Dirt', cursive; /* tipo de letra google fonts  */
+  }
+  h1:hover
+  {
+    color:#ff7235;
+  }
+  
+  
+  .seccion-oscura { /* fondo oscuro */
+    color: white;
+    background-color: #1b1b32;
+  }
+  
+  .seccion-clara { /* fondo blanco */
+    color: black;
+    background-color: white;
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0; /* izq der */
+    font-family: 'Rubik Dirt', cursive; /* tipo de letra google fonts  */
+  }
+  
+  
+  .seccion-texto {
+    font-size: 1.2rem;
+  }
+  
+  
+  .texto-negro {
+    color: black;
+  }
+  
+  .texto-blanco {
+    color: white;
+  }
+  
+  /* Seccion Hero */
+  
+  .hero {  
+    background-color: #f5f6f7;
+    min-height: 450px; /* altura minima para que se vea bien en pantallas pequeñas */
+    text-align: center;
+  }
+  
+  .hero-principal {
+    padding: 3rem; /* padding, espacio interno */
+  }
+  
+  .imagenPerfil {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    
+  }
+  
+  .hero-principal h2 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  /* Sobre mi */
+  
+  .sobre-mi {
+    height: 500px; /* altura */
+    padding: 10px;
+  }
+  
+  .sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Experiencia */
+  
+  .experiencia {
+    padding: 40px 40px 60px 40px; /* pading para la seccion de las cajas  */
+  }
+  
+  .experiencia .columna { 
+    padding: 20px;
+    border: 2px solid #8080804d; /* para que se identifique cada caja */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; /* distribuir de manera equitativa */
+    transition: all 0.2s ease-in; /* transicion para que se vea mejor */
+  }
+  
+  .experiencia .columna:hover { /* clase para animar cuando el cursos este arriba de el */
+    color: white;
+    background-color: #1b1b32;
+  }
+  
+  .experiencia i { /* clase para personalizar los iconos del grid */
+    font-size: 2.5rem;
+    color: #16526e;
+    background-color: #000000;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {  /* encabezados cuadricula */
+    font-size: 25px;
+    font-weight: bold; 
+    margin: 10px 0;
+  }
+  
+  .badges-contenedor { /* para todas las badges */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;  
+  }
+  
+  .badge { /* badges individual */
+    margin: 5px; /* para que no queden tan juntos*/
+  } 
+  
+  
+  
+  /* proyectos */
+  
+  .proyectos {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .proyectos .carousel {
+    max-width: 800px; /* para que el carrusel no ocupe toda la pantalla */
+  }
+  
+  .carousel-item { /* clase para cada elemento del carrusel */
+    height: 500px; /* para que todas las imagenes tengan la misma altura */
+  }
+  
+  .carousel-item .container { /* ajustar el contenedor del carrusel */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .proyecto-imagen { /* dimensiones de las imagenes */
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .proyecto-texto { /* clase para el texto de cada imagen */
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace; /* fuente para el texto */
+  }
+  
+  /* Contacto */
+  
+  .contacto button i {  /* boton de correo */
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out; /* transicion para que se vea mejor */
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+  /* Pie de pagina (footer) */
+  
+  footer {
+    min-height: 50px;
+    padding: 5px;
+  }
+  
+  
+  .icono-correo a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .icono-correo i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .icono-correo a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .icono-correo a:hover i {
+    color: black;
+  }
+  
+  
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 800px) {
+    .proyecto-imagen {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .proyecto-texto {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) { /* apartir de los 700 pixeles */
+  
+    .hero-inferior-imagen {
+      max-width: 600px; /* ancho maximo para que no llene la pantalla completa*/
+  
+    }
+  }

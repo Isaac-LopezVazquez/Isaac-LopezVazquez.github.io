@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="utf-8">
+  
+  <meta name="description" content="Portafolio de desarrollo web de isaac">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Titulo -->
+  <title>Portafolio</title>
+ 
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Barra de navegacion -->
+  <nav>
+    <h1></h1>
+    <ul class="navigation">
+      <li><a href="#sobre-mi" class="nav-link">Sobre mi</a></li>
+      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+
+    </ul>
+    
+  </nav>
+
+  <!-- Seccion sobre mi -->
+  <section class="hero align-items-stretch">
+    <!-- clase de boostrap para alinear y estirar los elementos del contenedor principal -->
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <!-- hacer que sea felxible, en columna y que este centrado con boostrap-->
+      <img class="imagenPerfil"
+        src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Wayfarers&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Brown"
+        alt="Foto de perfil">
+      <h1>Hola, soy Isaac</h1>
+      <h2>Estudiante de la carrera de inegenieria</h2>
+    </div>
+
+    
+  </section>
+
+  <!-- Sobre mi -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura"> 
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoceme un poco mas</h2>
+      <p class="seccion-texto">Soy estudiante de la carrera de ingenieria informayica, actualmente curso el 5to semestre
+        y este es mi primer proyecto para la materia de programacion para internet.</p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+
+  <section class="experiencia seccion-clara">
+    <div class="container text-center"> <!-- centrar con boostrap -->
+      <div class="row"> <!-- row  -->
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4"> 
+          <i class="bi bi-code-slash"></i> <!-- iconos con boostrap -->
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>En este tiempo he podido aprender dversas tecnologias para el desarrollo web como son las siguientes:</p>
+          <div class="badges-contenedor"> <!-- resaltar -->
+            <span class="badge text-bg-primary">HTML</span> <!-- badges con boostrap-->
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">Bootstrap</span>
+
+          </div>
+        </div>
+        <!-- otros conocimientos -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-server"></i>
+          <p class="experiencia-titulo">Otros conocimientos</p>
+          <p>En el tiempo que he cursado la carrera he logrado aprender en diversas areas tales como:</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Administracion de redes</span>
+            <span class="badge text-bg-primary">Administracion de servidores</span>
+            <span class="badge text-bg-primary">Programacion basica</span>
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+
+          <i class="bi bi-database-check"></i>
+          <p class="experiencia-titulo">Otras tecnologias</p>
+          <p>Tambien manejo diversos lenguajes de programacion asi como SGBD, como ejemplo tenemos los siguientes:</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Servidores</span>
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+            <span class="badge text-bg-primary">C,c++,python</span>
+            <span class="badge text-bg-primary">PostgreSQL , PHP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- proyectos -->
+  <section id="proyectos" class="proyectos seccion-clara">
+    <h2 class="seccion-titulo">Proyectos</h2>
+    <h3 class="seccion-descripcion">Estos son algunos proyectos en los que he participado recientemente</h3> <!-- -->
+
+    <!-- Carrusel de boostrap -->
+    <div id="proyectos-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel"> <!-- boostrap -->
+      <div class="carousel-inner"> <!-- interior -->
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="proyecto-imagen rounded-circle" 
+              src="imagenes/psi-connection.jpeg" alt="Foto depsi-connection">
+            <p class="proyecto-texto">Psi-connection: App web para apoyar a mi universidad a brindar mejor atencion
+              psicologica, y a los practicantes de esta profesion a obtener mayor experiencia</p>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="proyecto-imagen rounded-circle" src="imagenes/Residents.jpeg" alt="Foto Sg">
+            <p class="proyecto-texto">SG Residents: Sistema para automatizar los registros y pagos de un coto.</p>
+
+
+
+          </div>
+        </div>
+
+      </div>
+      <!-- botones carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#proyectos-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span> <!--  -->
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#proyectos-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+
+  <!-- Pie de pagina (footer) -->
+  <footer id="contacto" class="seccion-oscura d-flex flex-column align-items-center justify-content-center">  <!-- con boostrap lo hacemos flex, lo alineamos en columna y alineamos el contenido en el cemtro-->
+
+    <div class="icono-correo d-flex flex-wrap align-items-center justify-content-center"> <!-- flex wrap permite reajustar los iconos segun el dispositivo -->
+      <a href="mailto:isaacvazquez937@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <p>Contactame</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
